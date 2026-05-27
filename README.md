@@ -53,12 +53,20 @@ The dataset contains the following attributes used to determine water safety:
 
 ## 🤖 Model & Performance
 
-Multiple machine learning configurations were trained and evaluated. An Artificial Neural Network (ANN) was selected for deployment due to its superior capacity to model complex, multi-variable non-linear feature interactions.
+Machine learning configurations were trained and evaluated. An Artificial Neural Network (ANN) was selected for deployment due to its superior capacity to model complex, multi-variable non-linear feature interactions.
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 | :--- | :---: | :---: | :---: | :---: |
 | Support Vector Machine (SVM) | ~68.4% | ~66.1% | ~61.0% | ~63.4% |
-| **Artificial Neural Network (ANN)** ✅ | **🏆 Deployed** | **Dynamic** | **Inference** | **Pipeline** |
+
+### 📈 Deep Learning Performance Matrix
+
+| Metric | Score | Key Interpretation |
+| :--- | :---: | :--- |
+| **Accuracy** | `72.64%` | Overall global correctness of the neural network predictions. |
+| **Precision** | `70.05%` | Out of all water flagged as safe, 70% was truly safe. |
+| **Recall** | `63.60%` | The network successfully found 63.6% of all available drinking water. |
+| **F1-Score** | `66.67%` | Robust harmonic metric proving solid class balance stability. |
 
 > 🔑 **Note:** The final performance of your ANN depends on your dataset run variations, but it consistently outperforms shallow architectures by capitalizing on custom engineered interaction ratios and dense multi-layer feature extraction.
 
