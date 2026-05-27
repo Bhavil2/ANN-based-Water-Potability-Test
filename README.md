@@ -95,3 +95,5 @@ Machine learning configurations were trained and evaluated. An Artificial Neural
 * [TensorFlow Keras API Documentation](https://www.tensorflow.org/api_docs/python/tf/keras)
 * [Flask Framework Documentation](https://flask.palletsprojects.com/)
 * [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+### Preview
+![Water Quality Prediction UI](./screenshot.png)
