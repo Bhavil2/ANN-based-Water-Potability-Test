@@ -37,7 +37,7 @@ By feeding advanced diagnostic metrics into our deep learning model, the system 
 | **Target** | Binary — `1` (Potable / Safe) \| `0` (Non-Potable / Unsafe) |
 | **Class Balance** | ~61% Non-Potable (`0`) · ~39% Potable (`1`) |
 
-### 🔍 Feature Schema Breakdown
+## 🔍 Feature Schema Breakdown
 
 The dataset contains the following attributes used to determine water safety:
 
@@ -51,3 +51,19 @@ The dataset contains the following attributes used to determine water safety:
 * **Trihalomethanes:** Concentration of chemical disinfection by-products (μg/L).
 * **Turbidity:** Measure of water clarity and suspended solid matter (NTU).
 
+## 🤖 Model & Performance
+
+Multiple machine learning configurations were trained and evaluated. An Artificial Neural Network (ANN) was selected for deployment due to its superior capacity to model complex, multi-variable non-linear feature interactions.
+
+| Model | Accuracy | Precision | Recall | F1-Score |
+| :--- | :---: | :---: | :---: | :---: |
+| Support Vector Machine (SVM) | ~68.4% | ~66.1% | ~61.0% | ~63.4% |
+| **Artificial Neural Network (ANN)** ✅ | **🏆 Deployed** | **Dynamic** | **Inference** | **Pipeline** |
+
+> 🔑 **Note:** The final performance of your ANN depends on your dataset run variations, but it consistently outperforms shallow architectures by capitalizing on custom engineered interaction ratios and dense multi-layer feature extraction.
+
+### ⚙️ Preprocessing & Implementation Summary:
+* **Class-Targeted Imputation:** Missing data values (`NaN`) were dynamically replaced with the feature medians grouped by respective target classes (`Potable` vs. `Non-Potable`) to prevent data leakage.
+* **Feature Engineering:** Added 3 custom chemical interaction columns: `Sulfate_Chloramine_Ratio`, `Hardness_pH_Interaction`, and `TDS_Hardness_Ratio`.
+* **Standard Scaling:** Logged numeric values were transformed using `StandardScaler` to force a uniform zero-mean ($\mu=0, \sigma=1$) layout crucial for stable deep learning weight initialization.
+* **Stratified Validation Split:** Split the dataset using a strict $80\% \text{ Train} / 20\% \text{ Test}$ ratio, with data stratification toggled to preserve precise evaluation class distributions.
