@@ -75,3 +75,23 @@ Machine learning configurations were trained and evaluated. An Artificial Neural
 * **Feature Engineering:** Added 3 custom chemical interaction columns: `Sulfate_Chloramine_Ratio`, `Hardness_pH_Interaction`, and `TDS_Hardness_Ratio`.
 * **Standard Scaling:** Logged numeric values were transformed using `StandardScaler` to force a uniform zero-mean ($\mu=0, \sigma=1$) layout crucial for stable deep learning weight initialization.
 * **Stratified Validation Split:** Split the dataset using a strict $80\% \text{ Train} / 20\% \text{ Test}$ ratio, with data stratification toggled to preserve precise evaluation class distributions.
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Language** | Python 3.12+ |
+| **ML/Deep Learning** | TensorFlow (Keras), scikit-learn |
+| **Data Processing** | Pandas, NumPy |
+| **Visualization** | Matplotlib |
+| **Web Framework** | Flask, Flask-CORS |
+| **Frontend** | React, Tailwind CSS |
+| **Model Serialization**| Joblib (`.pkl`), Keras (`.h5`) |
+
+---
+
+## 📚 References
+
+* [Water Potability Dataset — Kaggle](https://www.kaggle.com/datasets/adityakadiwal/water-potability)
+* [TensorFlow Keras API Documentation](https://www.tensorflow.org/api_docs/python/tf/keras)
+* [Flask Framework Documentation](https://flask.palletsprojects.com/)
+* [Tailwind CSS Documentation](https://tailwindcss.com/docs)
