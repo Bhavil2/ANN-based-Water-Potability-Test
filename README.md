@@ -57,14 +57,14 @@ Machine learning configurations were trained and evaluated. An Artificial Neural
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 | :--- | :---: | :---: | :---: | :---: |
-| Support Vector Machine (SVM) | ~68.4% | ~66.1% | ~61.0% | ~63.4% |
+| Support Vector Machine (SVM) | ~65.6% | ~66.1% | ~61.0% | ~63.4% |
 
 ### 📈 Deep Learning Performance Matrix
 
 | Metric | Score | Key Interpretation |
 | :--- | :---: | :--- |
-| **Accuracy** | `72.64%` | Overall global correctness of the neural network predictions. |
-| **Precision** | `70.05%` | Out of all water flagged as safe, 70% was truly safe. |
+| **Accuracy** | `66.64%` | Overall global correctness of the neural network predictions. |
+| **Precision** | `67.05%` | Out of all water flagged as safe, 70% was truly safe. |
 | **Recall** | `63.60%` | The network successfully found 63.6% of all available drinking water. |
 | **F1-Score** | `66.67%` | Robust harmonic metric proving solid class balance stability. |
 
