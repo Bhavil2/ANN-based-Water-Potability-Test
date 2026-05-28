@@ -1,10 +1,14 @@
-# Python virtual environment
+# Ignore python virtual environments
 venv/
 .venv/
 __pycache__/
 *.pyc
 
-# Node/React dependencies
+# Ignore node modules from your React frontend
 node_modules/
-.env
 dist/
+.env
+
+# Ignore heavy data files and notebooks checkpoints (Optional but recommended)
+.ipynb_checkpoints/
+water_potability.csv
